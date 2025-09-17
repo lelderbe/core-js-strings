@@ -185,7 +185,7 @@ function removeLastOccurrences(str, value) {
  *
  * @example
  *   sumOfCodes('My String') => 861 (77 + 121 + 32 + 83 + 116 + 114 + 105 + 110 + 103 = 861)
- *   sumOfCodes('12345') => 495 (9 + 50 + 51 + 52 + 53 = 495)
+ *   sumOfCodes('12345') => 255 (49 + 50 + 51 + 52 + 53 = 255)
  *   sumOfCodes('') => 0
  *   sumOfCodes() => 0
  */
@@ -316,7 +316,7 @@ function countVowels(str) {
  * https://en.wikipedia.org/wiki/Palindrome
  *
  * @param {string} str - The input string.
- * @return {bool} - True if the string is a palindrome, false otherwise.
+ * @return {boolean} - True if the string is a palindrome, false otherwise.
  *
  * @example:
  *   isPalindrome('madam') => true
@@ -438,7 +438,7 @@ function unbracketTag(str) {
  * Extracts e-mails from single string with e-mails list delimited by semicolons
  *
  * @param {string} str - The input string.
- * @return {array} - The list of e-mails extracted from the string.
+ * @return {string[]} - The list of e-mails extracted from the string.
  *
  * @example
  *   'angus.young@gmail.com;brian.johnson@hotmail.com;bon.scott@yahoo.com'
