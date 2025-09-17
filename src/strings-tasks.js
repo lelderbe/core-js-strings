@@ -20,10 +20,7 @@
  *   getStringLength(undefined) => 0
  */
 function getStringLength(value) {
-  if (value === null || value === undefined) {
-    return 0;
-  }
-  return value.length;
+  return value?.length || 0;
 }
 
 /**
@@ -190,7 +187,7 @@ function removeLastOccurrences(str, value) {
  *   sumOfCodes() => 0
  */
 function sumOfCodes(str) {
-  if (str === null || str === undefined) {
+  if (!str) {
     return 0;
   }
   return str.split('').reduce((acc, char) => acc + char.charCodeAt(), 0);
